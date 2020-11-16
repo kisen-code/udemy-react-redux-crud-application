@@ -3,10 +3,10 @@ export const DECREMENT = 'DECREMENT'
 
 
 
-export count increment = () =>({
+export const increment = () =>({
     type:INCREMENT
 })
 
-export count increment = () =>({
+export const decrement = () =>({
     type:DECREMENT
 })
