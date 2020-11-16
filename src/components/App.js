@@ -20,8 +20,8 @@ class App extends Component {
 const mapStateToProps = state => ({value:state.count.value})
 
 const mapDispatchToProps = dispatch => ({
-  increment:()=>(increment()),
-  decrement:()=>(decrement())
+  increment:()=>dispatch(increment()),
+  decrement:()=>dispatch(decrement())
 })
 
 export default connect(mapStateToProps,mapDispatchToProps)(App)
